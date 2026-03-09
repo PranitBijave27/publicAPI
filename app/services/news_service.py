@@ -21,7 +21,6 @@ def getTopHeadlines(country="us",category=None,page=1):
 
     response = requests.get(url, params=params)
     data = response.json()
-
     articles = []
 
     for article in data.get("articles", []):
